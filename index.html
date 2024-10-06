@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lashes by Vick's</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+           <a href="#">Home</a>
+           <a href="#about">About</a>
+           <a href="#services">Services</a>
+           <a href="#gallery">Gallery</a>
+           <a href="#contact">Contact</a>
+    </nav>  
+    <header class="Logo">
+        <img src="./assets/LashesByVicks_Logo.png" alt="Lashes by Vick's Logo" style="width: 400px; height: auto;"><h2>Best lashes in SD</h2>
+    </header>
+
+    <!-- Section 1 -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! a little bit about me; I'm a mom juggling a 9-5 and a growing lash business. <br>
+           After years of dreaming, I decided to take the plunge and turn my passion for lashes<br>
+           into a reality. My goal is to help busy moms like myself look and feel their best<br>
+           without breaking the bank. I'm committed to providing a relaxing and enjoyable<br>
+           experience with top-notch lashes that will make you feel like a million bucks. <br>
+           Thank you for choosing me!</p>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="services">
+        <h2>Services</h2>
+        <ul class="lists">
+            <li>Clasics</li>
+            <li>Hybrids</li>
+            <li>Medium Volume</li>
+            <li>Mega Volume</li>
+            <li>Wispy</li>
+            <li>Wet Set</li>
+        </ul>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>This is where the pictures will be located</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lashes by Vick's. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
