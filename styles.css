@@ -31,15 +31,53 @@ section {
 body {
     color: hotpink;
     background-color: black;
+    text-align: center;
 }
 p {
     color: pink;
 }
 .lists {
     color: pink;
-    display: flex;
+    display: flex; /* Enables flexbox layout */
     gap: 50px;
+    justify-content: center; /* Centers the list items horizontally */
 }
+img {
+    width: 200px;
+    height: auto;
+}
+/*
+
+Exlpanation for the code below
+grid-template-columns: repeat(2, 1fr);: This sets two columns, 
+each taking up an equal fraction of the container's width (1fr).
+Responsive resizing: The images will resize as the container or 
+window shrinks, maintaining their aspect ratio. Below 600px, the 
+media query ensures the images stack in a single column for 
+better mobile display.
+
+*/
+.media {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Space between images */
+    max-width: 440px; /* Optional: limit max width */
+    margin: 0 auto;
+  }
+  
+.media img {
+    width: 100%; /* Makes images responsive */
+    max-width: 200px; /* Each image takes 200px initially */
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: cover; /* Crops the image to fit within the bounds */
+  }
+  
+@media (max-width: 600px) {
+    .media {
+      grid-template-columns: 1fr; /* Stack images in one column on smaller screens */
+    }
+  }
+  /* ******************************************************************************** */
 footer {
     background-color: #333;
     color: white;
